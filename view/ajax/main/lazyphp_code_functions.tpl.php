@@ -17,7 +17,7 @@
 
 	<?php if( strlen($data['code']) ): ?>
 	var last_code = $.base64Decode('<?=$data['code']?>');
-	feditor.setValue( last_code );
+	feditor.setValue( last_code , 1 );
 	<?php else: ?>
 	feditor.setValue( '<'+'?php'+"\r\n"+'/'+'/ 公共函数写这里，例如检查函数、过滤函数、权限检查函数'+"\r\n" );
 	<?php endif; ?>
